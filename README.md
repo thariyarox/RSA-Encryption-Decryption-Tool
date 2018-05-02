@@ -7,8 +7,12 @@ java -jar rsa.tool-1.0-jar-with-dependencies.jar
 
 See the running_tool.png in the repository for sample encyption and decryption output.
 
-When running the tool, if you get "java.security.NoSuchProviderException: JCE cannot authenticate the provider BC" exception,
-download the bcprov-ext-jdk16-1.46.jar file and copy it to the JRE_HOME/lib/ext folder in your computer. 
+When running the tool, if you get "java.security.NoSuchProviderException: JCE cannot authenticate the provider BC" or "rsa.tool-1.0-jar-with-dependencies.jar has unsigned entries - rsa/tool/CryptoUtil.class" exceptions,
+download the bcprov-ext-jdk16-1.46.jar file and copy it to the <JDK_HOME>/jre/lib/ext folder in your computer. Modify the <JDK_HOME>/jre/lib/security/java.security file and add a security provider as following.
+
+security.provider.10=org.bouncycastle.jce.provider.BouncyCastleProvider 
+
+In above, you can change the number 10 appropriately by looking at the existing security providers. Usually there are 9 security provider entries and if so add the above as the 10th.
 
 You may download the above jar file from following link. The same jar file is included in the resources folder of this repository.
 
