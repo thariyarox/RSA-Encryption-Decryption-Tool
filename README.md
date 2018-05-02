@@ -5,6 +5,8 @@ and run the following command.
 
 java -jar rsa.tool-1.0-jar-with-dependencies.jar
 
+See the running_tool.png in the repository for sample encyption and decryption output.
+
 When running the tool, if you get "java.security.NoSuchProviderException: JCE cannot authenticate the provider BC" exception,
 download the bcprov-ext-jdk16-1.46.jar file and copy it to the JRE_HOME/lib/ext folder in your computer. 
 
