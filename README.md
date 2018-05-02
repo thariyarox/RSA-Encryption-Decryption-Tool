@@ -18,6 +18,10 @@ private key alias: wso2carbon
 
 keystore password: wso2carbon
 
+private key password: wso2carbon
+
 plain text: 84271a8652
 
 encrypted text: QNz3doAuM4muiHUs2qENclCveK43kch/WUpJPVhvG47/H9rMyVAJCIz1Jd5HwiBRLU6LoEFXTd6a4E/7EWsDjt6MeaNvCNVCcTvG7PWTUvvqwHG5luJ3Mpv4agvVif0S7OsKE2GRhl17pnJsQa0kx78/bq0W9DzJfFlbEwFx1/U=
+
+
