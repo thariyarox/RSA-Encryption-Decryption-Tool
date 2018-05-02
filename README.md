@@ -8,7 +8,7 @@ java -jar rsa.tool-1.0-jar-with-dependencies.jar
 See the running_tool.png in the repository for sample encyption and decryption output.
 
 When running the tool, if you get "java.security.NoSuchProviderException: JCE cannot authenticate the provider BC" or "rsa.tool-1.0-jar-with-dependencies.jar has unsigned entries - rsa/tool/CryptoUtil.class" exceptions,
-download the bcprov-ext-jdk16-1.46.jar file and copy it to the <JDK_HOME>/jre/lib/ext folder in your computer. Modify the <JDK_HOME>/jre/lib/security/java.security file and add a security provider as following.
+download the bcprov-jdk15on-1.59.jar file and copy it to the <JDK_HOME>/jre/lib/ext folder in your computer. Modify the <JDK_HOME>/jre/lib/security/java.security file and add a security provider as following.
 
 security.provider.10=org.bouncycastle.jce.provider.BouncyCastleProvider 
 
@@ -16,7 +16,7 @@ In above, you can change the number 10 appropriately by looking at the existing 
 
 You may download the above jar file from following link. The same jar file is included in the resources folder of this repository.
 
-http://central.maven.org/maven2/org/bouncycastle/bcprov-ext-jdk16/1.46/bcprov-ext-jdk16-1.46.jar
+http://central.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/bcprov-jdk15on-1.59.jar
 
 Under the resources folder, a sample keystore file (wso2carbon.jks) is attached. You can test this sample with following.
 
